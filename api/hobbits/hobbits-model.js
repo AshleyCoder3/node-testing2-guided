@@ -21,8 +21,8 @@ async function insert(hobbit) {
   const [id] = await db("hobbits").insert(hobbit)
   return getById(id)
   // POSTGRES
-  const [hobbit] = await db('hobbits')
-    .insert(hobbit, ['id'])
+  // const [hobbit] = await db('hobbits')
+  //   .insert(hobbit, ['id', 'name'])
 }
 
 async function update(id, changes) {
