@@ -31,3 +31,6 @@ describe('[GET] /hobbits', () => {
     ])
   })
 })
+describe('[POST] /hobbits', () => {
+  test('responds with the new hobbit', async )
+})
