@@ -42,6 +42,8 @@ describe('Hobbits Model', () => {
     test('returns hobbits with correct properties', async () => {
       const sam = await Hobbit.getById(1);
       expect(sam).toMatchObject({ id: 1, name: 'sam' })
+      const frodo = await Hobbit.getById(2)
+      expect(frodo).toMatchObject({ id: 2, name: 'frodo' })
     })
   })
   describe('insert', () => {
