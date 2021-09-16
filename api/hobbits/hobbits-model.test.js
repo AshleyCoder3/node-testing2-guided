@@ -54,7 +54,7 @@ describe('Hobbits Model', () => {
       expect(hobbits).toHaveLength(5)
     })
     test('resolves to the newly created hobbit', async () => {
-
+      
     })
   })
 })
