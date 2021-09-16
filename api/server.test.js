@@ -42,5 +42,6 @@ describe('[POST] /hobbits', () => {
     const res = await request(server)
       .post('/hobbits')
       .send({ namz: 'bilbo' })
+    expect(res.status).toBe(422)
   })
 })
