@@ -1,5 +1,5 @@
 const server = require('./server')
-const db = require('../../data/dbConfig')
+const db = require('../data/dbConfig')
 
 beforeAll(async () => {
   await db.migrate.rollback()
@@ -8,4 +8,8 @@ beforeAll(async () => {
 
 beforeEach(async () => {
   await db.seed.run()
+})
+
+afterAll(async () => {
+  await db.destroy()
 })
