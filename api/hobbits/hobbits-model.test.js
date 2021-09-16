@@ -39,7 +39,7 @@ describe('Hobbits Model', () => {
     })
   })
   describe('getById', () => {
-
+    test('')
   })
   describe('insert', () => {
 
