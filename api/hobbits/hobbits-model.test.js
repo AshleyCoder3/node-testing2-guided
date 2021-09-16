@@ -50,7 +50,8 @@ describe('Hobbits Model', () => {
     test('creates a new hobbit in the db', async () => {
       await Hobbit.insert({ name: 'bilbo' })
       // const hobbits = await Hobbit.getAll() DON'T DO THIS
-      const hobbit = await db('hobbits')
+      const hobbits = await db('hobbits')
+      expect(hobbits).toHaveLength(5)
     })
     test('resolves to the newly created hobbit', async () => {
 
