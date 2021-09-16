@@ -10,6 +10,10 @@ beforeEach(async () => {
   await db.seed.run()
 })
 
+describe('Hobbits Model', () => {
+
+})
+
 test('the environment', () => {
   expect(process.env.NODE_ENV).toBe('testing')
 })
