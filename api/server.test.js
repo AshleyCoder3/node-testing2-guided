@@ -23,5 +23,11 @@ describe('[GET] /hobbits', () => {
   })
   test('responds with all hobbits', async () => {
     expect(res.body).toHaveLength(4)
+    expect(res.body).toEqual([
+      { name: 'sam', id: 1 },
+      { name: 'frodo', id: 2 },
+      { name: 'pippin', id: 3 },
+      { name: 'merry', id: 4 },
+    ])
   })
 })
