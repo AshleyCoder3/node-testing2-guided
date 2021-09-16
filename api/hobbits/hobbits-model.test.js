@@ -39,7 +39,9 @@ describe('Hobbits Model', () => {
     })
   })
   describe('getById', () => {
-    test('')
+    test('returns hobbits with correct properties', async () => {
+      const hobbit = await Hobbit.getById(1);
+    })
   })
   describe('insert', () => {
 
