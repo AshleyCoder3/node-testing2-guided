@@ -12,7 +12,7 @@ beforeEach(async () => {
 
 describe('Hobbits Model', () => {
   describe('getAll', () => {
-    test('', async () => {
+    test('returns a list of hobbits', async () => {
 
     })
   })
