@@ -14,8 +14,8 @@ afterAll(async () => {
 })
 
 describe('[GET] /hobbits', () => {
+  let res
   beforeEach(async () => {
-    let res
     res = await request(server).get('/hobbits')
   })
   test('responds with a 200 OK', async () => {
