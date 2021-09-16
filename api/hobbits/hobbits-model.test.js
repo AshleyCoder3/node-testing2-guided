@@ -6,8 +6,14 @@ beforeAll(async () => {
   await db.migrate.latest()
 })
 
-beforeEach(await () => {
-  
+beforeEach(async () => {
+  await db('hobbits').truncate()
+  await db('hobbits').insert([
+    
+
+
+
+  ])
 })
 
 test('the environment', () => {
