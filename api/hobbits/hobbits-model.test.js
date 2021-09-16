@@ -47,7 +47,10 @@ describe('Hobbits Model', () => {
     })
   })
   describe('insert', () => {
+    test('creates a new hobbit in the db', async () => {
 
+    })
+    test('')
   })
 })
 
