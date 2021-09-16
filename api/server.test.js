@@ -34,6 +34,8 @@ describe('[GET] /hobbits', () => {
 describe('[POST] /hobbits', () => {
   test('responds with the new hobbit', async () => {
     const res = await request(server)
-    .post('/hobbits').send()
+      .post('/hobbits')
+      .send({ name: 'bilbo' })
+    expect(res.body).toM
   })
 })
