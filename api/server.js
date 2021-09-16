@@ -25,7 +25,7 @@ server.get("/hobbits/id", (req, res) => {
 });
 
 server.post("/hobbits", (req, res) => {
-  res.end()
+  res.end() // you
 });
 
 server.delete("/hobbits/:id", (req, res) => {
