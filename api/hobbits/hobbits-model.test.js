@@ -54,7 +54,8 @@ describe('Hobbits Model', () => {
       expect(hobbits).toHaveLength(5)
     })
     test('resolves to the newly created hobbit', async () => {
-      const inserted = 
+      const inserted = await Hobbit.insert({ name: 'bilbo' })
+      expect(inserted).toMatchObject({ id: 5, name: 'bilbo' })
     })
   })
 })
