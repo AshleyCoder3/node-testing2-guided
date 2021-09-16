@@ -48,9 +48,10 @@ describe('Hobbits Model', () => {
   })
   describe('insert', () => {
     test('creates a new hobbit in the db', async () => {
+      Hobbit.insert({ name: 'bilbo' })
       
     })
-    test('resolves to the newly created hobbit', async ()   => {
+    test('resolves to the newly created hobbit', async () => {
 
     })
   })
