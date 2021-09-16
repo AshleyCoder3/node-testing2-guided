@@ -12,8 +12,9 @@ beforeEach(async () => {
 
 describe('Hobbits Model', () => {
   describe('getAll', () => {
-    test('returns a list of hobbits', async () => {
-
+    test('returns all hobbits in the table', async () => {
+      const hobbits = await Hobbit.getAll()
+      expect(hobbits).
     })
   })
   describe('getById', () => {
