@@ -16,6 +16,26 @@ describe('Hobbits Model', () => {
       const hobbits = await Hobbit.getAll()
       expect(hobbits).toHaveLength(4)
     })
+    test('returns hobbits in the correct shape', async () => {
+      expected = [
+        {
+            "id": 1,
+            "name": "sam"
+        },
+        {
+            "id": 2,
+            "name": "frodo"
+        },
+        {
+            "id": 3,
+            "name": "pippin"
+        },
+        {
+            "id": 4,
+            "name": "merry"
+        }
+    ]
+    })
   })
   describe('getById', () => {
 
