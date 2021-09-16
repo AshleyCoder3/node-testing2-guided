@@ -14,8 +14,8 @@ afterAll(async () => {
 })
 
 describe('[GET] /hobbits', () => {
-  let res
   beforeEach(async () => {
+    let res
     res = await request(server).get('/hobbits')
   })
   test('responds with a 200 OK', async () => {
@@ -23,7 +23,7 @@ describe('[GET] /hobbits', () => {
   })
   test('responds with all hobbits', async () => {
     expect(res.body).toHaveLength(4)
-    expect(res.body).toEqual([
+    expect(res.body).toMatchObject([
       { name: 'sam', id: 1 },
       { name: 'frodo', id: 2 },
       { name: 'pippin', id: 3 },
