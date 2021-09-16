@@ -24,7 +24,7 @@ describe('Hobbits Model', () => {
         },
         {
           "id": 2,
-          "name": "Frodo"
+          "name": "frodo"
         },
         {
           "id": 3,
