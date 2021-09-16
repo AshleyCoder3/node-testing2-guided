@@ -49,7 +49,7 @@ describe('Hobbits Model', () => {
   describe('insert', () => {
     test('creates a new hobbit in the db', async () => {
       await Hobbit.insert({ name: 'bilbo' })
-      const hobbits = await Hobbit.getAll()
+      // const hobbits = await Hobbit.getAll() DON'T DO THIS
       const hobbit = await db('hobbits')
     })
     test('resolves to the newly created hobbit', async () => {
