@@ -50,6 +50,7 @@ describe('Hobbits Model', () => {
     test('creates a new hobbit in the db', async () => {
       await Hobbit.insert({ name: 'bilbo' })
       const hobbits = await Hobbit.getAll()
+      const hobbit = await db('hobbits')
     })
     test('resolves to the newly created hobbit', async () => {
 
