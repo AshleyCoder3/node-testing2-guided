@@ -32,5 +32,8 @@ describe('[GET] /hobbits', () => {
   })
 })
 describe('[POST] /hobbits', () => {
-  test('responds with the new hobbit', async )
+  test('responds with the new hobbit', async () => {
+    const res = await request(server)
+    .post('/hobbits').send()
+  })
 })
