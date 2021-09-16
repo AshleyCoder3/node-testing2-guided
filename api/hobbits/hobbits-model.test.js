@@ -14,7 +14,7 @@ describe('Hobbits Model', () => {
   describe('getAll', () => {
     test('returns all hobbits in the table', async () => {
       const hobbits = await Hobbit.getAll()
-      expect(hobbits).
+      expect(hobbits).toHaveLength(4)
     })
   })
   describe('getById', () => {
