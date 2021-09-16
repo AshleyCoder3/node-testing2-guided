@@ -38,5 +38,7 @@ describe('[POST] /hobbits', () => {
       .send({ name: 'bilbo' })
     expect(res.body).toMatchObject({ id: 5, name: 'bilbo' })
   })
-  test('')
+  test('responds with a 422 on missing name', async () => {
+    // you!!
+  })
 })
