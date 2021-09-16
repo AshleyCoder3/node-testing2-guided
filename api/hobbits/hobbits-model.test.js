@@ -11,7 +11,15 @@ beforeEach(async () => {
 })
 
 describe('Hobbits Model', () => {
+  describe('getAll', () => {
 
+  })
+  describe('getById', () => {
+
+  })
+  describe('insert', () => {
+
+  })
 })
 
 test('the environment', () => {
