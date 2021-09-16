@@ -40,7 +40,8 @@ describe('Hobbits Model', () => {
   })
   describe('getById', () => {
     test('returns hobbits with correct properties', async () => {
-      const hobbit = await Hobbit.getById(1);
+      const sam = await Hobbit.getById(1);
+      expect(sam).toMatchObject({ id: 1, name: 'sam' })
     })
   })
   describe('insert', () => {
