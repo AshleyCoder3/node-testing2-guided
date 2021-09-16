@@ -7,13 +7,7 @@ beforeAll(async () => {
 })
 
 beforeEach(async () => {
-  await db('hobbits').truncate()
-  await db('hobbits').insert([
-    { name: 'frodo' },
-    { name: 'sam' },
-    { name: 'frodo' },
-    { name: 'frodo' },
-  ])
+  await db.seed.run()
 })
 
 test('the environment', () => {
